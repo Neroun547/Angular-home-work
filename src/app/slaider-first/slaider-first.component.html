@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="img-container">
+        <img *ngIf="activeImg === 0"  class="img-slaider-car" src="assets/static/car-1.jpg" alt="car-1">
+        <p *ngIf="activeImg === 0" class="img-car-text">Its car number 1</p>
+
+        <img *ngIf="activeImg === 1"  class="img-slaider-car" src="assets/static/car-2.jpg" alt="car-2">
+        <p *ngIf="activeImg === 1" class="img-car-text">Its car number 2</p>
+
+        <img *ngIf="activeImg === 2"  class="img-slaider-car" src="assets/static/car-3.jpg" alt="car-3">
+        <p *ngIf="activeImg === 2" class="img-car-text">Its car number 3</p>
+        <img *ngIf="activeImg === 3"  class="img-slaider-car" src="assets/static/car-4.jpg" alt="car-4">
+        <p *ngIf="activeImg === 3" class="img-car-text">Its car number 4</p>
+        <img *ngIf="activeImg === 4"  class="img-slaider-car" src="assets/static/car-5.jpg" alt="car-5">
+        <p *ngIf="activeImg === 4" class="img-car-text">Its car number 5</p>
+    </div>
+    <div class="sub-container">
+        <materialize-button (click)="prevImg()">left</materialize-button>
+        <materialize-button (click)="nextImg()">right</materialize-button>
+    </div>
+</div>

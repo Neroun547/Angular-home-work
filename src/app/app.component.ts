@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { allowedNodeEnvironmentFlags } from 'process';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app-angular';
+  title:string = 'app-angular';
 }

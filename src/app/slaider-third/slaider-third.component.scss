@@ -1,0 +1,63 @@
+$materialize-fonts-path: '~materialize-angular/fonts';
+ 
+@import '~materialize-angular/styles/materialize-angular.scss';
+
+.container{
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .sub-container{
+        height: 100px;
+        margin-top: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img-container{
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            max-width: 600px;
+            min-width: 600px;
+            max-height: 350px;
+            min-height: 350px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hide-img-city{
+            transition: all .7s;
+            left: -800px;
+        }
+
+        .show-img-city{
+            overflow: visible;
+            transition: all .7s;
+            left: 0;
+        }
+
+        .img-city-text{
+            top: 300px;
+            color: #fff;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            right: 0;
+            text-align: center;
+        }
+
+        .show-img-text{
+            left: 0;
+            opacity: 1;
+            transition: all .7s;
+        }
+        .hide-img-text{
+            opacity: 0;
+            transition: all .7s;
+        }
+    }
+}
